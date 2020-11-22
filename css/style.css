@@ -1,0 +1,279 @@
+:root {
+  --accent-color: #2196f3;
+  --color-black: #212121;
+  --color-gray: #757575;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --bg-color-dark: #2f303a;
+  --bg-color-blue: #2196f3;
+  --bg-color-white: #ffffff;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+.box {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  letter-spacing: 0.02em;
+}
+/* =================== header =========================== */
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #000000;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  background: var(--bg-color-white);
+}
+header .link {
+  letter-spacing: 0.02em;
+}
+.header-box {
+  display: flex;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+.margin {
+  margin-left: auto;
+}
+/* ==================== header logo ===================== */
+.header-address + .header-address {
+  margin-left: 50px;
+}
+.header-logo {
+  margin-right: 93px;
+
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* ==================== span header-logo ===================== */
+.header-logo span {
+  color: #000000;
+}
+
+/* ========================= nav ===================== */
+.header-item {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+/* ============================= current page ====================== */
+.page {
+  display: block;
+
+  color: var(--color-blue);
+}
+/* ====================== header address ============================ */
+.header-address {
+  color: var(--color-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+/* ==================== hover, focus в шапке ===================== */
+.header-link:hover,
+.header-link:focus,
+.header-address:hover,
+.header-address:focus {
+  color: var(--accent-color);
+}
+/* ================== hero ================ */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background: var(--bg-color-dark);
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--color-white);
+  background: var(--bg-color-dark);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* =========================== button  ============================= */
+.hero-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
+  color: var(--color-white);
+  background-color: var(--bg-color-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* ============================ advantages ============================= */
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-flex {
+  display: flex;
+}
+.advantages-item {
+  width: 270px;
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-title {
+  margin-bottom: 10px;
+
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-text {
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* =============================== doing ======================================== */
+.doing {
+  padding-bottom: 94px;
+}
+.doing-flex {
+  display: flex;
+}
+.doing-title {
+  margin-bottom: 50px;
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.doing-item:not(:last-child) {
+  margin-right: 30px;
+}
+.doing-img {
+  display: block;
+}
+/* ==================================== team ====================================== */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-title {
+  margin-bottom: 50px;
+
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.time-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ========================================== images ============================================== */
+.team-img {
+  margin-bottom: 30px;
+}
+/* ============ team-list-title =============================*/
+.team-list-title {
+  margin-bottom: 10px;
+
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* =================== team-text ==================*/
+.team-text {
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* ========================= footer ============================ */
+footer {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-color-dark);
+}
+/* ===================== footer-logo ========================= */
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-logo span {
+  color: var(--color-white);
+}
+/* ===================== footer address ========================= */
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address {
+  display: block;
+  margin-bottom: 9px;
+
+  color: var(--color-white);
+}
+/* ===================== footer email tel ========================= */
+.footer-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-address {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,214 @@
+:root {
+  --accent-color: #2196f3;
+  --accent-button-color: #ffffff;
+  --accent-button-bg-color: #2196f3;
+  --color-black: #212121;
+  --color-gray: #757575;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --bg-color-dark: #2f303a;
+  --bg-color-blue: #2196f3;
+  --bg-color-white: #ffffff;
+  --bg-color-gray: #f5f4fa;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+.box {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  letter-spacing: 0.02em;
+}
+/* =================== header =========================== */
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  background: var(--bg-color-white);
+}
+header .link {
+  letter-spacing: 0.02em;
+}
+.header-box {
+  display: flex;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+.margin {
+  margin-left: auto;
+}
+/* ==================== header logo ===================== */
+.header-address + .header-address {
+  margin-left: 50px;
+}
+.header-logo {
+  margin-right: 93px;
+
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* ==================== span header-logo ===================== */
+.header-logo span {
+  color: #000000;
+}
+
+/* ========================= Навигационные ссылки ===================== */
+.header-item {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+/* ============================= current page ====================== */
+.page {
+  display: block;
+
+  color: var(--color-blue);
+}
+/* ====================== header address ============================ */
+.header-address {
+  color: var(--color-gray);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+/* ==================== hover, focus в шапке ===================== */
+.header-link:hover,
+.header-link:focus,
+.header-address:hover,
+.header-address:focus {
+  color: var(--accent-color);
+}
+/* ============================ filters =========================== */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filters-btn {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  height: 38px;
+
+  color: var(--color-black);
+  background-color: var(--bg-color-gray);
+}
+.filters-btn:hover,
+.filters-btn:focus {
+  color: var(--accent-button-color);
+  background-color: var(--accent-button-bg-color);
+}
+/* =========================== projects =========================== */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+
+  width: calc((100% - 60px) / 3);
+}
+.projects-item:nth-child(3n) {
+  margin-right: 0;
+}
+.projects-img {
+  display: block;
+}
+.group {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.title {
+  margin-bottom: 4px;
+
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.text {
+  color: var(--color-gray);
+}
+/* ========================= footer ============================ */
+footer {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-color-dark);
+}
+/* ===================== footer-logo ========================= */
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer-logo span {
+  color: var(--color-white);
+}
+/* ===================== footer address ========================= */
+address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.address {
+  display: block;
+  margin-bottom: 9px;
+
+  color: var(--color-white);
+}
+/* ===================== footer email tel ========================= */
+.footer-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-address {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+}
