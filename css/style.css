@@ -38,7 +38,7 @@ header {
   border-bottom: 1px solid #ececec;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  background: var(--bg-color-white);
+  background-color: var(--bg-color-white);
 }
 header .link {
   letter-spacing: 0.02em;
@@ -108,15 +108,25 @@ header .link {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  min-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
 
-  background: var(--bg-color-dark);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+    url(../images/studio/hero/Img-1.jpg);
+  background-color: var(--bg-color-dark);
+}
+.hero-overlay {
+  /* background-size: cover;
+  background-repeat: no-repeat; */
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--color-white);
-  background: var(--bg-color-dark);
+  /* background-color: var(--bg-color-dark); */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -131,6 +141,7 @@ header .link {
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   color: var(--color-white);
   background-color: var(--bg-color-blue);
