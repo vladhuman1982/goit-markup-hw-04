@@ -243,6 +243,19 @@ header .link {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-link {
+  width: 44px;
+  height: 44px;
+}
+.team-link:hover,
+.team-link:focus {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+.team-svg {
+  width: 20px;
+  height: 20px;
+}
 /* ========================================== images ============================================== */
 .team-img {
   margin-bottom: 30px;
@@ -258,6 +271,7 @@ header .link {
 }
 /* =================== team-text ==================*/
 .team-text {
+  margin-bottom: 16px;
   color: var(--color-gray);
   font-weight: 400;
   font-size: 16px;
