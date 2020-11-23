@@ -113,13 +113,14 @@ header .link {
   margin-right: auto;
   margin-left: auto;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
-    url(../images/studio/hero/Img-1.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/studio/hero/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--bg-color-dark);
-}
-.hero-overlay {
-  /* background-size: cover;
-  background-repeat: no-repeat; */
 }
 .hero-title {
   margin-top: 0;
@@ -137,6 +138,7 @@ header .link {
 /* =========================== button  ============================= */
 .hero-btn {
   display: inline-block;
+  border: var(--bg-color-blue);
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
