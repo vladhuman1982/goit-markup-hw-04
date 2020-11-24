@@ -95,7 +95,21 @@ header .link {
   font-weight: 500;
   font-size: 14px;
 }
-/* ==================== hover, focus в шапке ===================== */
+.header-address:not(:last-child) {
+  margin-right: 30px;
+}
+.header-address-svg {
+  margin-right: 10px;
+
+  width: 16px;
+  height: 12px;
+  fill: var(--color-gray);
+}
+.header-address-svg:hover,
+.header-address-svg:focus {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
 .header-link:hover,
 .header-link:focus,
 .header-address:hover,
@@ -240,21 +254,48 @@ header .link {
   font-size: 36px;
   text-align: center;
 }
+.team-item {
+  padding-bottom: 30px;
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-item {
+  display: inline-block;
+}
 .team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 12px;
   width: 44px;
   height: 44px;
+
+  background-color: transparent;
 }
 .team-link:hover,
 .team-link:focus {
-  color: var(--color-white);
+  cursor: pointer;
+
   background-color: var(--accent-color);
+}
+.team-link:hover .team-svg,
+.team-link:focus .team-svg {
+  fill: var(--color-white);
 }
 .team-svg {
   width: 20px;
   height: 20px;
+
+  fill: #afb1b8;
 }
 /* ========================================== images ============================================== */
 .team-img {
@@ -295,26 +336,33 @@ header .link {
   display: flex;
   justify-content: center;
 }
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
-  cursor: pointer;
-}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 .clients-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
   width: 170px;
   height: 90px;
 }
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
 .clients-svg {
-  width: 44px;
-  height: 49px;
+  width: 50px;
+  height: 50px;
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+  fill: var(--accent-color);
 }
 /* ========================= footer ============================ */
 footer {
@@ -367,33 +415,7 @@ address {
 .footer-address:not(:last-child) {
   margin-bottom: 9px;
 }
-/* ==================== join list =================================== */
-.join-list {
-  display: flex;
-  justify-content: center;
-}
-.join-item {
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.join-item:hover,
-.join-item:focus {
-  cursor: pointer;
-
-  background-color: var(--accent-color);
-}
-.join-item:not(:last-child) {
-  margin-right: 10px;
-}
-.join-icons {
-  width: 20px;
-  height: 20px;
-
-  fill: var(--color-white);
-}
+/* ====================== join title ================================ */
 .join-title {
   margin-bottom: 20px;
 
@@ -402,4 +424,33 @@ address {
   text-transform: uppercase;
 
   color: var(--color-white);
+}
+/* ==================== join list =================================== */
+.join-list {
+  display: flex;
+}
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-link {
+  display: flex;
+  border-radius: 50%;
+
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join-link:hover,
+.join-link:focus {
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+}
+.join-icons {
+  width: 20px;
+  height: 20px;
+
+  fill: var(--color-white);
 }
