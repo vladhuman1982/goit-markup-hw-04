@@ -131,8 +131,6 @@ header .link {
   justify-content: center;
   margin-bottom: 50px;
 }
-.filters-item {
-}
 .filters-item:not(:last-child) {
   margin-right: 8px;
 }
